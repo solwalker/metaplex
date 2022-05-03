@@ -34,6 +34,8 @@ const ConnectButton = styled(WalletDialogButton)`
   font-weight: bold;
 `;
 
+const image = "/gz.gif"
+
 const MintContainer = styled.div``; // add your owns styles here
 
 export interface HomeProps {
@@ -294,6 +296,9 @@ const Home = (props: HomeProps) => {
   return (
     <Container style={{ marginTop: 100 }}>
       <Container maxWidth="xs" style={{ position: 'relative' }}>
+        <div className="relative p-2 bg-[#212529] shadow-xl border-neutral-600 aspect-square ring-1  max-w-sm mx-auto my-3 rounded-lg ">
+          <img src={image} alt="" width="100%" style={{ borderRadius: '5px' }} />
+        </div>
         <Paper
           style={{
             padding: 24,
@@ -500,14 +505,6 @@ const Home = (props: HomeProps) => {
               </MintContainer>
             </>
           )}
-          <Typography
-            variant="caption"
-            align="center"
-            display="block"
-            style={{ marginTop: 7, color: 'grey' }}
-          >
-            Powered by METAPLEX
-          </Typography>
         </Paper>
       </Container>
 
