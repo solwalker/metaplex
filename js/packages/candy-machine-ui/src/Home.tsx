@@ -34,7 +34,7 @@ const ConnectButton = styled(WalletDialogButton)`
   font-weight: bold;
 `;
 
-const image = "/gz.gif"
+const image = "/BBC.jpeg"
 
 const MintContainer = styled.div``; // add your owns styles here
 
